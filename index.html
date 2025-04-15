@@ -3,84 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Leona Hammelrath – Research Portfolio</title>
+  <title>Leona Hammelrath – Research & Talks</title>
   <style>
-    /* Global Styles */
-    body {
-      font-family: Arial, sans-serif;
+    /* Reset and basic styling */
+    * {
       margin: 0;
       padding: 0;
-      display: flex;
-      flex-direction: column;
+      box-sizing: border-box;
     }
-    
-    /* Header Navigation */
+    html, body {
+      width: 100%;
+      height: 100%;
+      background-color: #f9f4ef; /* Very light warm grey */
+      font-family: "Avenir", "Helvetica Neue", Helvetica, sans-serif;
+      color: #333;
+    }
+    /* Header navigation styling */
     header {
+      width: 100%;
       background-color: #333;
       padding: 10px 20px;
     }
     header nav {
       display: flex;
-      justify-content: flex-start;
+      gap: 20px;
     }
     header nav a {
       color: #fff;
-      margin-right: 20px;
       text-decoration: none;
       font-weight: bold;
     }
     header nav a:hover {
       text-decoration: underline;
     }
-    
-    /* Main Container */
+    /* Central container for sidebar and main content */
     .container {
       display: flex;
-      flex: 1;
-    }
-    
-    /* Sidebar Styling */
-    .sidebar {
-      width: 250px;
-      background-color: #f4f4f4;
+      flex-direction: row;
+      max-width: 1000px;
+      margin: 20px auto;
       padding: 20px;
-      box-sizing: border-box;
+      gap: 20px;
+    }
+    /* Sidebar styling: no special background color so it blends in */
+    .sidebar {
+      flex: 0 0 250px;
     }
     .sidebar img {
-      width: 100%;
-      height: auto;
-      border-radius: 50%;
+      width: 200px;  /* Fixed width for a square */
+      height: 200px; /* Fixed height so that the image remains square */
+      border-radius: 50%; /* This makes it completely round */
       object-fit: cover;
-      margin-bottom: 15px;
+      display: block;
+      margin: 0 auto 15px auto;
     }
-    .contact-details p {
-      margin: 10px 0;
-      font-size: 14px;
-    }
+    .contact-details p,
     .contact-details a {
+      font-size: 0.9rem;
+      line-height: 1.4;
       color: #333;
-      text-decoration: none;
+      margin-bottom: 10px;
     }
-    .contact-details a:hover {
-      text-decoration: underline;
-    }
-    
-    /* Main Content Area */
+    /* Main content styling */
     .main {
       flex: 1;
+      background: #fff;
       padding: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
     }
+    /* Section styling */
     section {
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
     section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
       border-bottom: 2px solid #ccc;
       padding-bottom: 5px;
+    }
+    hr {
+      border: 0;
+      height: 1px;
+      background-color: #ccc;
+      margin: 20px 0;
+    }
+    ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 10px;
+      overflow-x: auto;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-  <!-- Top Navigation -->
+  <!-- Top Navigation Bar -->
   <header>
     <nav>
       <a href="#research">Research</a>
@@ -88,51 +118,64 @@
     </nav>
   </header>
 
-  <!-- Container: Sidebar + Main Content -->
+  <!-- Central container holding sidebar and main content -->
   <div class="container">
-    
-    <!-- Left Sidebar (Photo and Contact Details) -->
+    <!-- Sidebar: Photo & Contact Details -->
     <div class="sidebar">
-      <img src="selfie.jpeg" alt="Photo of Leona">
+      <img src="myphoto.jpg" alt="Photo of Leona">
       <div class="contact-details">
         <p><strong>Work:</strong> Free University Berlin</p>
         <p><strong>Email:</strong> <a href="mailto:leona.hammelrath@gmail.com">leona.hammelrath@gmail.com</a></p>
         <p><strong>GitHub:</strong> <a href="https://github.com/leona-ha" target="_blank">github.com/leona-ha</a></p>
-        <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=g9a-tx8AAAAJ&hl=de&oi=ao" target="_blank">Google Scholar</a></p>
+        <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=g9a-tx8AAAAJ&amp;hl=de&amp;oi=ao" target="_blank">Google Scholar</a></p>
       </div>
     </div>
 
-    <!-- Main Content Area -->
+    <!-- Main content: About Me, Research, Talks -->
     <div class="main">
       <!-- About Me Section -->
       <section id="about">
         <h2>About Me</h2>
-        <p>Hello, I'm Leona Hammelrath, a researcher and speaker at Free University Berlin. I specialize in [your specialty areas], and my work involves [briefly describe your work or interests]. Feel free to explore my research publications and talks below.</p>
+        <p>Hello, I'm Leona Hammelrath, a researcher and speaker at Free University Berlin. I specialize in [your specialty areas] and am passionate about exploring innovative research and sharing insights through presentations and publications.</p>
       </section>
+      
+      <hr>
       
       <!-- Research Section -->
       <section id="research">
         <h2>Research</h2>
-        <p>Add details about your research here. This could include information about your projects, publications, or research interests.</p>
+        <p>Here, you can provide detailed information about your research projects, publications, and areas of expertise.</p>
+        <!-- Example of subdividing research topics with horizontal lines -->
+        <div class="subsection">
+          <h3>Project A</h3>
+          <p>Description of research project A goes here.</p>
+          <hr>
+        </div>
+        <div class="subsection">
+          <h3>Project B</h3>
+          <p>Description of research project B goes here.</p>
+        </div>
       </section>
+      
+      <hr>
       
       <!-- Talks Section with PDF Links -->
       <section id="talks">
         <h2>Talks</h2>
-        <p>Here you can list details about your talks and presentations. You may also include links to PDF files of your presentations.</p>
+        <p>Below you can find information about my talks and presentations. You may also include links to PDF files of your talks.</p>
         <ul>
           <li><a href="pdfs/talk1.pdf" target="_blank">Talk 1 – Title and Date</a></li>
+          <hr>
           <li><a href="pdfs/talk2.pdf" target="_blank">Talk 2 – Title and Date</a></li>
         </ul>
-        <p>If you prefer to embed a PDF directly into the page, you can use an embedded object like this:</p>
+        <p>To embed a PDF directly, you can use the following HTML code:</p>
         <pre>
 &lt;object data="pdfs/talk1.pdf" type="application/pdf" width="100%" height="600"&gt;
-  &lt;p&gt;It appears you don't have a PDF plugin for this browser. &lt;a href="pdfs/talk1.pdf"&gt;Download the PDF&lt;/a&gt; instead.&lt;/p&gt;
+  &lt;p&gt;It appears you don't have a PDF plugin for this browser. &lt;a href="pdfs/talk1.pdf"&gt;Download the PDF&lt;/a&gt;.&lt;/p&gt;
 &lt;/object&gt;
         </pre>
       </section>
     </div>
-
   </div>
 </body>
 </html>
