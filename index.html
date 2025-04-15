@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Leona Hammelrath – Research & Talks</title>
+  <title>Leona Hammelrath – Research Portfolio</title>
   <style>
     /* Global Styles */
     body {
@@ -49,18 +49,19 @@
     .sidebar img {
       width: 100%;
       height: auto;
-      border-radius: 50%; /* Makes the image circular */
+      border-radius: 50%;
+      object-fit: cover;
       margin-bottom: 15px;
     }
-    .sidebar .contact-details p {
+    .contact-details p {
       margin: 10px 0;
       font-size: 14px;
     }
-    .sidebar .contact-details a {
+    .contact-details a {
       color: #333;
       text-decoration: none;
     }
-    .sidebar .contact-details a:hover {
+    .contact-details a:hover {
       text-decoration: underline;
     }
     
@@ -90,7 +91,7 @@
   <!-- Container: Sidebar + Main Content -->
   <div class="container">
     
-    <!-- Left Sidebar -->
+    <!-- Left Sidebar (Photo and Contact Details) -->
     <div class="sidebar">
       <img src="selfie.jpeg" alt="Photo of Leona">
       <div class="contact-details">
@@ -101,15 +102,34 @@
       </div>
     </div>
 
-    <!-- Main Content -->
+    <!-- Main Content Area -->
     <div class="main">
+      <!-- About Me Section -->
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Hello, I'm Leona Hammelrath, a researcher and speaker at Free University Berlin. I specialize in [your specialty areas], and my work involves [briefly describe your work or interests]. Feel free to explore my research publications and talks below.</p>
+      </section>
+      
+      <!-- Research Section -->
       <section id="research">
         <h2>Research</h2>
-        <p>Add details about your research here.</p>
+        <p>Add details about your research here. This could include information about your projects, publications, or research interests.</p>
       </section>
+      
+      <!-- Talks Section with PDF Links -->
       <section id="talks">
         <h2>Talks</h2>
-        <p>Add information about your talks and presentations here.</p>
+        <p>Here you can list details about your talks and presentations. You may also include links to PDF files of your presentations.</p>
+        <ul>
+          <li><a href="pdfs/talk1.pdf" target="_blank">Talk 1 – Title and Date</a></li>
+          <li><a href="pdfs/talk2.pdf" target="_blank">Talk 2 – Title and Date</a></li>
+        </ul>
+        <p>If you prefer to embed a PDF directly into the page, you can use an embedded object like this:</p>
+        <pre>
+&lt;object data="pdfs/talk1.pdf" type="application/pdf" width="100%" height="600"&gt;
+  &lt;p&gt;It appears you don't have a PDF plugin for this browser. &lt;a href="pdfs/talk1.pdf"&gt;Download the PDF&lt;/a&gt; instead.&lt;/p&gt;
+&lt;/object&gt;
+        </pre>
       </section>
     </div>
 
