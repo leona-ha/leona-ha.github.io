@@ -11,17 +11,15 @@
       padding: 0;
       box-sizing: border-box;
     }
-
+    
     html, body {
       width: 100%;
       height: 100%;
-      /* Very light warm grey */
-      background-color: #f9f4ef;
-      /* Fallback font: Helvetica Neue, etc. */
+      background-color: #f9f4ef; /* Very light warm grey */
       font-family: "Avenir", "Helvetica Neue", Helvetica, sans-serif;
       color: #333;
     }
-
+    
     /* Header navigation styling */
     header {
       width: 100%;
@@ -30,6 +28,7 @@
     }
     header nav {
       display: flex;
+      justify-content: center; /* Center the menu */
       gap: 20px;
     }
     header nav a {
@@ -40,7 +39,7 @@
     header nav a:hover {
       text-decoration: underline;
     }
-
+    
     /* Central container for sidebar and main content */
     .container {
       display: flex;
@@ -50,7 +49,7 @@
       padding: 20px;
       gap: 20px;
     }
-
+    
     /* Sidebar styling: no special background color so it blends */
     .sidebar {
       flex: 0 0 250px;
@@ -71,17 +70,20 @@
       color: #333;
       margin-bottom: 10px;
     }
-
+    /* Styling for icons in contact details */
+    .contact-details .icon {
+      margin-right: 5px;
+    }
+    
     /* Main content styling (no white background now) */
     .main {
       flex: 1;
       padding: 20px;
-      /* Removed background and box-shadow to show the warm grey */
       display: flex;
       flex-direction: column;
       gap: 30px;
     }
-
+    
     /* Section styling */
     section {
       margin-bottom: 20px;
@@ -92,7 +94,7 @@
       border-bottom: 2px solid #ccc;
       padding-bottom: 5px;
     }
-
+    
     /* Horizontal rule styling */
     hr {
       border: 0;
@@ -100,12 +102,12 @@
       background-color: #ccc;
       margin: 20px 0;
     }
-
+    
     ul {
       list-style: disc;
       margin-left: 20px;
     }
-
+    
     a {
       color: #0066cc;
       text-decoration: none;
@@ -113,7 +115,7 @@
     a:hover {
       text-decoration: underline;
     }
-
+    
     pre {
       background: #f4f4f4;
       padding: 10px;
@@ -130,39 +132,47 @@
       <a href="#talks">Talks</a>
     </nav>
   </header>
-
+  
   <!-- Central container holding sidebar and main content -->
   <div class="container">
     <!-- Sidebar: Photo & Contact Details -->
     <div class="sidebar">
-      <!-- Ensure your photo path is correct -->
-      <img src="selfie.jpeg" alt="Photo of Leona">
+      <img src="selfie.jpg" alt="Photo of Leona">
       <div class="contact-details">
-        <p><strong>Work:</strong> Free University Berlin</p>
-        <p><strong>Email:</strong> <a href="mailto:leona.hammelrath@gmail.com">leona.hammelrath@gmail.com</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/leona-ha" target="_blank">github.com/leona-ha</a></p>
-        <p><strong>Google Scholar:</strong> 
+        <p><span class="icon">🏢</span>Free University Berlin</p>
+        <p>
+          <span class="icon">✉️</span>
+          <a href="mailto:leona.hammelrath@gmail.com">leona.hammelrath@gmail.com</a>
+        </p>
+        <p>
+          <span class="icon">🐙</span>
+          <a href="https://github.com/leona-ha" target="_blank">github.com/leona-ha</a>
+        </p>
+        <p>
+          <span class="icon">🎓</span>
           <a href="https://scholar.google.com/citations?user=g9a-tx8AAAAJ&amp;hl=de&amp;oi=ao" target="_blank">
             Google Scholar
           </a>
         </p>
       </div>
     </div>
-
+    
     <!-- Main content: About Me, Research, Talks -->
     <div class="main">
       <!-- About Me Section -->
       <section id="about">
         <h2>About Me</h2>
         <p>
-          Hi, I'm Leona! I'm a researcher at Free University Berlin. My work 
-          is on the intersection of Machine Learning and Clinical Psychology. 
-          Professionally, I'm interested in how different kinds of patient data 
-          can be used to monitor psychotherapy and predict therapy outcomes. Privately, I'm interested in other things!
-
+          Hi, I'm Leona! I'm a researcher at Free University Berlin. My work is on the intersection of Machine Learning and Clinical Psychology.
+        </p>
+        <p>
+          Professionally, I focus on using various types of patient data to monitor psychotherapy and predict therapy outcomes.
+        </p>
+        <p>
           I'm currently leading the PREACT-digital project, where we collect digital phenotyping data in patients undergoing CBT for internalizing disorders.
-          Contact me for more details - I'm always open to collaborations.
-
+        </p>
+        <p>
+          Contact me for more details—I'm always open to collaborations!
         </p>
       </section>
       
@@ -191,8 +201,7 @@
       <section id="talks">
         <h2>Talks</h2>
         <p>
-          Below you can find information about my talks and presentations. You may also include links to PDF files of your
-          talks.
+          Below you can find information about my talks and presentations. You may also include links to PDF files of your talks.
         </p>
         <ul>
           <li><a href="pdfs/talk1.pdf" target="_blank">Talk 1 – Title and Date</a></li>
