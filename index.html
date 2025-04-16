@@ -112,6 +112,21 @@
       margin: 3px 0;
     }
     
+    /* Talks styling */
+    .talk {
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+    .talk-title {
+      font-size: 1.3rem;
+      margin: 5px 0;
+    }
+    .talk-details {
+      font-size: 0.9rem;
+      margin: 3px 0;
+    }
+    
     /* Horizontal rule styling */
     hr {
       border: 0;
@@ -125,8 +140,9 @@
       margin-left: 20px;
     }
     
+    /* Global link styling (non-blue) */
     a {
-      color: #0066cc;
+      color: #333;  /* Dark grey, matching normal text */
       text-decoration: none;
     }
     a:hover {
@@ -145,7 +161,7 @@
   <!-- Top Navigation Bar -->
   <header>
     <nav>
-      <a href="#research">Research</a>
+      <a href="#about">About Me</a>
       <a href="#publications">Publications</a>
       <a href="#talks">Talks</a>
     </nav>
@@ -164,13 +180,13 @@
       </div>
     </div>
     
-    <!-- Main content: About Me, Publications, Research, Talks -->
+    <!-- Main content: About Me, Publications, Talks -->
     <div class="main">
       <!-- About Me Section -->
       <section id="about">
         <h2>About Me</h2>
         <p>
-          Hi, I'm Leona Hammelrath! I'm a researcher at Free University Berlin working at the intersection of Machine Learning and Clinical Psychology.
+          Hi, I'm <strong>Leona Hammelrath</strong>! I'm a researcher at Free University Berlin working at the intersection of Machine Learning and Clinical Psychology.
         </p>
         <p>
           Professionally, I focus on using diverse patient data to monitor psychotherapy and predict therapy outcomes. I have a deep interest in combining data science with mental health research.
@@ -210,43 +226,31 @@
             </a>
           </h3>
           <p class="pub-authors">
-            <strong>Leona Hammelrath</strong> (<a href="https://orcid.org/your-orcid-id" target="_blank">Open the ORCID record</a>), Kevin Hilbert, Manuel Heinrich, Pavle Zagorscak, and Christine Knaevelsrud
+            <strong>Leona Hammelrath</strong> (<a href="https://orcid.org/your-orcid-id" target="_blank">Open the ORCID record</a>), Kevin Hilbert, Manuel Heinrich, Pavle Zagorscak, Christine Knaevelsrud
           </p>
           <p class="pub-venue">Psychological Medicine</p>
         </div>
       </section>
       
-
       <hr>
       
-<!-- Talks Section with PDF Links -->
-<section id="talks">
-  <h2>Talks</h2>
-  <p>
-    Below you can find information about my talks and presentations at various conferences.
-  </p>
-  <ul>
-    <li>
-      <a href="DPK_2025_Hammelrath.pdf" target="_blank">
-        Uncovering daily symptoms: long-term digital phenotyping and
-        EMA in patients undergoing cognitive behavioral therapy 
-        for internalizing disorders (SP6) –
-        Deutscher Psychotherapie Kongress 2025
-      </a>
-      <br>
-      <em>Leona Hammelrath</em>
-    </li>
-    <!-- Example of additional talks:
-    <hr>
-    <li><a href="pdfs/talk2.pdf" target="_blank">Another Talk – Title and Date</a></li>
-    -->
-  </ul>
-  <pre>
-&lt;object data="pdfs/DPK_2025_Hammelrath.pdf" type="application/pdf" width="100%" height="600"&gt;
-  &lt;p&gt;It appears you don't have a PDF plugin for this browser. 
-    &lt;a href="DPK_2025_Hammelrath.pdf"&gt;Download the PDF&lt;/a&gt;.
-  &lt;/p&gt;
-&lt;/object&gt;
-  </pre>
-</section>
+      <!-- Talks Section -->
+      <section id="talks">
+        <h2>Talks</h2>
+        <div class="talk">
+          <h3 class="talk-title">
+            <a href="pdfs/DPK_2025_Hammelrath.pdf" target="_blank">
+              Uncovering daily symptoms: long-term digital phenotyping and EMA in patients undergoing cognitive behavioral therapy for internalizing disorders (SP6)
+            </a>
+          </h3>
+          <p class="talk-details">
+            Presented at Deutscher Psychotherapie Kongress 2025 by <strong>Leona Hammelrath</strong>
+          </p>
+        </div>
+      </section>
+      
+    </div>
+  </div>
+</body>
+</html>
 
