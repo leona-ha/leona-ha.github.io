@@ -3,157 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Leona Hammelrath – Research, Publications & Talks</title>
+  <title>Leona Hammelrath – Publications & Talks</title>
   <style>
     /* Reset and basic styling */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     html, body {
-      width: 100%;
-      height: 100%;
-      background-color: #f9f4ef; /* Very light warm grey */
+      width: 100%; height: 100%;
+      background-color: #f9f4ef;
       font-family: "Avenir", "Helvetica Neue", Helvetica, sans-serif;
       color: #333;
     }
-    
+
     /* Header navigation styling */
     header {
-      width: 100%;
-      background-color: #333;
-      padding: 10px 20px;
+      width: 100%; background-color: #333; padding: 10px 20px;
     }
     header nav {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
+      display: flex; justify-content: center; gap: 20px;
     }
     header nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
+      color: #fff; text-decoration: none; font-weight: bold;
     }
-    header nav a:hover {
-      text-decoration: underline;
-    }
-    
-    /* Central container for sidebar and main content */
+    header nav a:hover { text-decoration: underline; }
+
+    /* Central container */
     .container {
-      display: flex;
-      flex-direction: row;
-      max-width: 1000px;
-      margin: 20px auto;
-      padding: 20px;
-      gap: 20px;
+      display: flex; flex-direction: row;
+      max-width: 1000px; margin: 20px auto; padding: 20px; gap: 20px;
     }
-    
+
     /* Sidebar styling */
     .sidebar {
       flex: 0 0 250px;
     }
     .sidebar img {
-      display: block;
-      margin: 0 auto 15px auto;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%; /* Makes the image completely round */
-      object-fit: cover;
+      display: block; margin: 0 auto 15px;
+      width: 200px; height: 200px;
+      border-radius: 50%; object-fit: cover;
     }
     .contact-details p,
     .contact-details a {
-      font-size: 0.9rem;
-      line-height: 1.4;
-      color: #333;
+      font-size: 0.9rem; line-height: 1.4; color: #333;
       margin-bottom: 10px;
     }
-    .contact-details .icon {
-      margin-right: 5px;
-    }
-    
+    .contact-details .icon { margin-right: 5px; }
+
     /* Main content styling */
     .main {
-      flex: 1;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
+      flex: 1; padding: 20px;
+      display: flex; flex-direction: column; gap: 30px;
     }
-    .main p {
-      margin-bottom: 1em;
-      text-align: justify;
-    }
-    
+    .main p { margin-bottom: 1em; text-align: justify; }
+
     /* Section styling */
-    section {
-      margin-bottom: 20px;
-    }
+    section { margin-bottom: 20px; }
     section h2 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 5px;
+      font-size: 1.5rem; margin-bottom: 10px;
+      border-bottom: 2px solid #ccc; padding-bottom: 5px;
     }
-    
+
     /* Publications styling */
     .publication {
-      margin-bottom: 20px;
-      padding-bottom: 10px;
+      margin-bottom: 20px; padding-bottom: 10px;
       border-bottom: 1px solid #ccc;
     }
     .pub-title {
-      font-size: 1.3rem;
+      font-size: 1.1rem; /* reduced from 1.3rem */
       margin: 5px 0;
     }
     .pub-authors,
     .pub-venue {
-      font-size: 0.9rem;
-      margin: 3px 0;
+      font-size: 0.9rem; margin: 3px 0;
     }
-    
+
     /* Talks styling */
     .talk {
-      margin-bottom: 20px;
-      padding-bottom: 10px;
+      margin-bottom: 20px; padding-bottom: 10px;
       border-bottom: 1px solid #ccc;
     }
     .talk-title {
-      font-size: 1.3rem;
+      font-size: 1.1rem; /* reduced from 1.3rem */
       margin: 5px 0;
     }
     .talk-details {
-      font-size: 0.9rem;
-      margin: 3px 0;
+      font-size: 0.9rem; margin: 3px 0;
     }
-    
+
+    /* Global link styling */
+    a {
+      color: #333; text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+
     /* Horizontal rule styling */
     hr {
-      border: 0;
-      height: 1px;
-      background-color: #ccc;
+      border: 0; height: 1px; background-color: #ccc;
       margin: 20px 0;
     }
-    
-    ul {
-      list-style: disc;
-      margin-left: 20px;
-    }
-    
-    /* Global link styling (non-blue) */
-    a {
-      color: #333;  /* Dark grey, matching normal text */
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    
+
+    ul { list-style: disc; margin-left: 20px; }
     pre {
-      background: #f4f4f4;
-      padding: 10px;
-      overflow-x: auto;
-      font-size: 0.9rem;
+      background: #f4f4f4; padding: 10px;
+      overflow-x: auto; font-size: 0.9rem;
     }
   </style>
 </head>
@@ -161,15 +112,14 @@
   <!-- Top Navigation Bar -->
   <header>
     <nav>
-      <a href="#about">About Me</a>
       <a href="#publications">Publications</a>
       <a href="#talks">Talks</a>
     </nav>
   </header>
-  
-  <!-- Central container holding sidebar and main content -->
+
+  <!-- Central container -->
   <div class="container">
-    <!-- Sidebar: Photo & Contact Details -->
+    <!-- Sidebar -->
     <div class="sidebar">
       <img src="selfie.jpg" alt="Photo of Leona">
       <div class="contact-details">
@@ -179,32 +129,14 @@
         <p><span class="icon">🎓</span><a href="https://scholar.google.com/citations?user=g9a-tx8AAAAJ&amp;hl=de&amp;oi=ao" target="_blank">Google Scholar</a></p>
       </div>
     </div>
-    
-    <!-- Main content: About Me, Publications, Talks -->
+
+    <!-- Main content -->
     <div class="main">
-      <!-- About Me Section -->
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          Hi, I'm <strong>Leona Hammelrath</strong>! I'm a researcher at Free University Berlin working at the intersection of Machine Learning and Clinical Psychology.
-        </p>
-        <p>
-          Professionally, I focus on using diverse patient data to monitor psychotherapy and predict therapy outcomes. I have a deep interest in combining data science with mental health research.
-        </p>
-        <p>
-          I'm currently leading the PREACT-digital project, where we collect long-term digital phenotyping data in 500 patients undergoing CBT for internalizing disorders.
-        </p>
-        <p>
-          Contact me for more details—I'm always happy to brainstorm ideas for fruitful collaborations!
-        </p>
-      </section>
-      
-      <hr>
-      
+
       <!-- Publications Section -->
       <section id="publications">
         <h2>Publications</h2>
-        
+
         <!-- First Publication -->
         <div class="publication">
           <h4 class="pub-title">
@@ -217,7 +149,7 @@
           </p>
           <p class="pub-venue">medRxiv Preprint (2025)</p>
         </div>
-        
+
         <!-- Second Publication -->
         <div class="publication">
           <h4 class="pub-title">
@@ -231,10 +163,12 @@
           <p class="pub-venue">Psychological Medicine</p>
         </div>
       </section>
-      
+
       <!-- Talks Section -->
       <section id="talks">
         <h2>Talks</h2>
+
+        <!-- DPK 2025 Talk -->
         <div class="talk">
           <h4 class="talk-title">
             <a href="pdfs/DPK_2025_Hammelrath.pdf" target="_blank">
@@ -245,8 +179,20 @@
             Presented at Deutscher Psychotherapie Kongress (DPK) 2025
           </p>
         </div>
+
+        <!-- DGPS 2024 Talk -->
+        <div class="talk">
+          <h4 class="talk-title">
+            <a href="pdfs/DGPS_presentation_Hammelrath.pdf" target="_blank">
+              Behind the spotlight: Using EMA and passive sensing to depict assessment context in a clinical sample
+            </a>
+          </h4>
+          <p class="talk-details">
+            Presented at DGPS 2024 by <strong>Leona Hammelrath</strong>
+          </p>
+        </div>
+
       </section>
-      
     </div>
   </div>
 </body>
