@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Leona Hammelrath – Publications & Talks</title>
+  <title>Leona Hammelrath – About, Publications & Talks</title>
   <style>
     /* Reset and basic styling */
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -41,10 +41,8 @@
       width: 200px; height: 200px;
       border-radius: 50%; object-fit: cover;
     }
-    .contact-details p,
-    .contact-details a {
-      font-size: 0.9rem; line-height: 1.4; color: #333;
-      margin-bottom: 10px;
+    .contact-details p, .contact-details a {
+      font-size: 0.9rem; line-height: 1.4; color: #333; margin-bottom: 10px;
     }
     .contact-details .icon { margin-right: 5px; }
 
@@ -68,11 +66,10 @@
       border-bottom: 1px solid #ccc;
     }
     .pub-title {
-      font-size: 1.1rem; /* reduced from 1.3rem */
+      font-size: 1.1rem; /* smaller */
       margin: 5px 0;
     }
-    .pub-authors,
-    .pub-venue {
+    .pub-authors, .pub-venue {
       font-size: 0.9rem; margin: 3px 0;
     }
 
@@ -82,7 +79,7 @@
       border-bottom: 1px solid #ccc;
     }
     .talk-title {
-      font-size: 1.1rem; /* reduced from 1.3rem */
+      font-size: 1.1rem; /* smaller */
       margin: 5px 0;
     }
     .talk-details {
@@ -90,9 +87,7 @@
     }
 
     /* Global link styling */
-    a {
-      color: #333; text-decoration: none;
-    }
+    a { color: #333; text-decoration: none; }
     a:hover { text-decoration: underline; }
 
     /* Horizontal rule styling */
@@ -102,14 +97,10 @@
     }
 
     ul { list-style: disc; margin-left: 20px; }
-    pre {
-      background: #f4f4f4; padding: 10px;
-      overflow-x: auto; font-size: 0.9rem;
-    }
   </style>
 </head>
 <body>
-  <!-- Top Navigation Bar -->
+  <!-- Header: only Publications & Talks -->
   <header>
     <nav>
       <a href="#publications">Publications</a>
@@ -117,7 +108,6 @@
     </nav>
   </header>
 
-  <!-- Central container -->
   <div class="container">
     <!-- Sidebar -->
     <div class="sidebar">
@@ -130,69 +120,87 @@
       </div>
     </div>
 
-    <!-- Main content -->
+    <!-- Main content: About Me, Publications, Talks -->
     <div class="main">
 
-      <!-- Publications Section -->
+      <!-- About Me (no longer in header) -->
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm <strong>Leona Hammelrath</strong>! I'm a researcher at Free University Berlin working at the intersection of Machine Learning and Clinical Psychology.
+        </p>
+        <p>
+          Professionally, I focus on using diverse patient data to monitor psychotherapy and predict therapy outcomes. I have a deep interest in combining data science with mental health research.
+        </p>
+        <p>
+          I'm currently leading the PREACT-digital project, where we collect long-term digital phenotyping data in 500 patients undergoing CBT for internalizing disorders.
+        </p>
+        <p>
+          Contact me for more details—I'm always happy to collaborate!
+        </p>
+      </section>
+
+      <hr>
+
+      <!-- Publications -->
       <section id="publications">
         <h2>Publications</h2>
 
-        <!-- First Publication -->
         <div class="publication">
-          <h4 class="pub-title">
+          <h3 class="pub-title">
             <a href="https://www.medrxiv.org/content/10.1101/2025.03.14.25323957v1" target="_blank">
               PREACT-digital: Study protocol for a longitudinal, observational multi-center study on wearable- and EMA-based predictors of non-response to CBT for internalizing disorders
             </a>
-          </h4>
+          </h3>
           <p class="pub-authors">
             <strong>Leona Hammelrath</strong>, Annette Brose, Manuel Heinrich, Pavle Zagorscak, Sebastian Burchert, Till Langhammer, Christine Knaevelsrud
           </p>
           <p class="pub-venue">medRxiv Preprint (2025)</p>
         </div>
 
-        <!-- Second Publication -->
         <div class="publication">
-          <h4 class="pub-title">
+          <h3 class="pub-title">
             <a href="https://www.cambridge.org/core/journals/psychological-medicine/article/select-or-adjust-how-information-from-early-treatment-stages-boosts-the-prediction-of-nonresponse-in-internetbased-depression-treatment/267F277F30EBCE4484EB8358697B74A8" target="_blank">
               Select or Adjust: How Information from Early Treatment Stages Boosts the Prediction of Nonresponse in Internet-based Depression Treatment
             </a>
-          </h4>
+          </h3>
           <p class="pub-authors">
-            <strong>Leona Hammelrath</strong> (<a href="https://orcid.org/your-orcid-id" target="_blank">Open the ORCID record</a>), Kevin Hilbert, Manuel Heinrich, Pavle Zagorscak, Christine Knaevelsrud
+            <strong>Leona Hammelrath</strong> (<a href="https://orcid.org/your-orcid-id" target="_blank">ORCID</a>), Kevin Hilbert, Manuel Heinrich, Pavle Zagorscak, Christine Knaevelsrud
           </p>
-          <p class="pub-venue">Psychological Medicine</p>
+          <p class="pub-venue">Psychological Medicine (2024)</p>
         </div>
       </section>
 
-      <!-- Talks Section -->
+      <hr>
+
+      <!-- Talks -->
       <section id="talks">
         <h2>Talks</h2>
 
-        <!-- DPK 2025 Talk -->
         <div class="talk">
-          <h4 class="talk-title">
+          <h3 class="talk-title">
             <a href="pdfs/DPK_2025_Hammelrath.pdf" target="_blank">
               Uncovering daily symptoms: long-term digital phenotyping and EMA in patients undergoing cognitive behavioral therapy for internalizing disorders (SP6)
             </a>
-          </h4>
+          </h3>
           <p class="talk-details">
             Presented at Deutscher Psychotherapie Kongress (DPK) 2025
           </p>
         </div>
 
-        <!-- DGPS 2024 Talk -->
         <div class="talk">
-          <h4 class="talk-title">
+          <h3 class="talk-title">
             <a href="pdfs/DGPS_presentation_Hammelrath.pdf" target="_blank">
               Behind the spotlight: Using EMA and passive sensing to depict assessment context in a clinical sample
             </a>
-          </h4>
+          </h3>
           <p class="talk-details">
             Presented at DGPS 2024 by <strong>Leona Hammelrath</strong>
           </p>
         </div>
 
       </section>
+
     </div>
   </div>
 </body>
